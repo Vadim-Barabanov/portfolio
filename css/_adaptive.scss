@@ -1,0 +1,257 @@
+@media only screen and (max-width: 1000px) {
+     /* BURGER-MENU PREFERENCE */
+
+    .toggle-btn {
+        display: block;
+        position: fixed;
+        height: 30px;
+        padding: 5px;
+        margin: 30px 0 0 30px;
+        z-index: 999;
+        transition: .2s ease-in-out;
+
+        span {
+            display: block;
+            position: relative;
+        }
+
+        span, span::before, span::after {
+            width: 30px;
+            height: 3px;
+            border-radius: 2px;
+            background: #000;
+            color-adjust: exact;
+            transform-origin: center;
+            transition: .2s ease-in-out;
+        }
+
+        span::before, span::after {
+            content: '';
+            position: absolute;
+        }
+
+        span::before {
+            top: 6px;
+        }
+
+        span::after {
+            top: 12px;
+        }
+    }
+
+    .heading {
+        transform: translateX(-150px);
+        transform-origin: left;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 150px;
+        height: 100vh;
+        background-color: #333;
+        color: #fff;
+        z-index: 1;
+        transition: .3s ease-in-out;
+    
+        &-logo {
+            display: none;
+        }
+
+        &-navigation {
+            display: block;
+
+            img {
+                display: block;
+                width: 60px;
+                height: auto;
+                margin: 0 0 30px 15px;
+            }
+    
+            &__link {
+                font-size: 23px;
+                margin: 10px 0 30px 0px;
+            }
+        } 
+    }
+
+    .nav-open .toggle-btn {
+        transform: translateX(150px);
+
+        span {
+            transform: rotate(45deg);
+        }
+
+        span::after {
+            transform: rotate(-90deg);
+            top: 1px;
+        }
+
+        span::before {
+            transform: scale(0);
+        }
+    }
+
+    .nav-open .heading {
+        // display: flex;
+        transform: translateX(0);
+    }
+
+    .hero {
+        &-wrapper {
+            align-items: center;
+        }
+
+        &-wrapper *{
+            margin: 0 auto;
+        }
+
+        &-label {
+            font-size: 45px;
+        }
+
+        &-link {
+            margin-top: 10%;
+        }
+    }
+
+    .about {
+        &-content {
+            flex-direction: column;
+        }
+    }
+
+    .projects {
+        &-content {
+
+            img {
+                width: 80%;
+            }
+            
+            img:hover {
+                transform: none;
+            }
+        }
+    }
+
+    .contacts {
+        &-content {
+            img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            &__link {
+                flex-direction: column;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .footer {
+        &-link, &-link__decrp {
+            display: block;
+        }
+
+        &-button {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    h2 {
+        padding: 20px 0;
+    }
+
+    .hero {
+        h1 { 
+            font-size: 35px;
+            margin: 20px 0;
+        }
+        &-wrapper {
+            grid-template-columns: 1fr;
+        }
+        &-contacts {
+            margin: 20px 0;
+        }
+        &-label {
+            margin: 20px 0;
+            text-align: center;
+        }
+    }
+
+    .phoneLink {
+        display: none;
+    }
+
+    .about {
+        padding-bottom: 40px;
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        &-content {
+            &__img {
+                width: 325px;
+            }
+            &__text {
+                h4, h2 {
+                    align-self: center;
+                }
+                align-items: flex-start;
+            }
+        }
+    }
+
+    .projects {
+        padding-bottom: 40px;
+
+        h2 {
+            padding-top: 60px;
+        }
+
+        &-content {
+            h3 {
+                margin: 15px 0;
+            }
+        }
+    }
+
+    .diff {
+        h2 {
+            margin: 30px 0;
+        }
+    }
+
+    .contacts {
+        padding-bottom: 20px;
+
+        &-content {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+
+
+            &__link {
+                flex-direction: initial;
+                margin-bottom: 20px;
+            }
+
+            img {
+                margin-right: 15px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .footer {
+        h4 {
+            text-align: center;
+        }
+
+        ul {
+            padding-left: 35px;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Vadim Barabanov">
+        <meta name="description" content="Personal website, Portofio">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+            integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+            crossorigin="anonymous"
+        />
+        <title>Vadim Barabanov</title>
+    </head>
+
+    <body>
+        <div class="toggle-btn">
+          <span></span>
+        </div>
+
+        <header class="heading">
+            <div class="container">
+                <div class="heading-wrapper">
+                    <div class="heading-logo">
+                        <span>Vadim</span>Barabanov
+                    </div>
+                    <nav class="heading-navigation">
+                        <img src="img/vb.png" alt="VB">
+                        <a href="#hero" class="heading-navigation__link scroll">Home</a>
+                        <a href="#about" class="heading-navigation__link scroll">My&nbsp;skills</a>
+                        <a href="#projects" class="heading-navigation__link scroll">My&nbsp;projects</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-me">
+                        <img src="img/vadim-barabanov.jpg" alt="Vadim Barabanov" class="about-content__img">
+                        <div class="hero-contacts">
+                            <a href="https://t.me/sir_jisatsu" title="Telegram" class="hero-contacts__link"><i class="fab fa-telegram"></i></a>
+                            <a href="https://github.com/Vadim-Barabanov" title="GitHub" class="hero-contacts__link"><i class="fab fa-github"></i></a>
+                            <a href="mailto:introvert.png@gmail.com" title="Email" class="hero-contacts__link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-action">
+                        <h1 class="hero-label">React Front-end Developer</h1>
+                        <a href="#projects" class="hero-action__link scroll">Show&nbsp;my&nbsp;projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content__text">
+                    <h2>My skills</h2>
+                    <h4>Technologies:</h4>
+                    <ul>
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                        <li>HTML + CSS (SASS/SCSS)</li>
+                        <li>Git</li>
+                    </ul>
+                    <h4>Libraries:</h4>
+                    <ul>
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>Axios</li>
+                        <li>Formik</li>
+                        <li>Material-UI</li>
+                        <li style="opacity: 0.6;">and other...</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects"> 
+            <div class="container">
+                <h2>Some of my projects:</h2>
+                <div class="projects-wrapper">
+                    <h3 class="projects-wrapper__header">React:</h3>
+                    <div class="projects-content">
+                        <!-- <div class="projects-content__item"> -->
+                        <!--   <h3>Social Network</h3> -->
+                        <!--   <a href="https://github.com/Vadim-Barabanov/social-network"><img src="#" alt="Social Network"></a> -->
+                        <!-- </div> -->
+                        <div class="projects-content__item">
+                          <h3>Text based minigame</h3>
+                          <a href="https://number-of-guessing.netlify.app/"><img src="img/projects/guessinggame.jpg" alt="Guessing of numbers"></a>
+                        </div>
+                        <div class="projects-content__item">
+                          <h3>Simple Todo App</h3>
+                          <a href="https://todoish-reactjs.netlify.app/"><img src="img/projects/todoish.jpg" alt="Todo App"></a>
+                        </div>
+                    </div>
+                    <h3 class="projects-wrapper__header">Simple websites:</h3>
+                    <div class="projects-content">
+                        <div class="projects-content__item">
+                          <h3>Landing for application about COVID</h3>
+                          <a href="https://covid19-application.netlify.app/"><img src="img/projects/covid19.jpg" alt="Landing for COVID"></a>
+                        </div>
+                        <div class="projects-content__item">
+                          <h3>Individual Lawyers Website</h3>
+                          <a href="https://theadvogrand.netlify.app/"><img src="img/projects/advogrand.jpg" alt="Individual Lawyers"></a>
+                        </div>
+                        <div class="projects-content__item">
+                          <h3>Massive City Event</h3>
+                          <a href="https://salesbattle.netlify.app/"><img src="img/projects/sbattle.jpg" alt="Massive City Envet"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h4>Contact me:</h4>
+                <div class="footer-contacts">
+                    <a href="https://t.me/sir_jisatsu" title="Telegram" class="footer-contacts__link"><i class="fab fa-telegram"></i></a>
+                    <a href="https://github.com/Vadim-Barabanov" title="GitHub" class="footer-contacts__link"><i class="fab fa-github"></i></a>
+                    <a href="mailto:introvert.png@gmail.com" title="Email" class="footer-contacts__link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </section> 
+
+        <footer class="footer">
+            <p class="footer-sign">Vadim Barabanov, Kyiv 2021</p>
+        </footer>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/scrolling.js"></script>
+    </body>
+</html>

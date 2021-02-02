@@ -20,6 +20,10 @@ $secondary-bg-color: #333;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Chakra Petch', Arial, sans-serif;
     color: $common;
@@ -115,12 +119,6 @@ ul {
 
 .heading.scrolled {
     background-color: $secondary-bg-color;
-
-    &-navigaion {
-        &__link:hover {
-            background-color: $primary-bg-color;
-        }
-    }
 }
 
 /* HERO CONF */

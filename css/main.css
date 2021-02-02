@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Chakra Petch", Arial, sans-serif;
   color: #fff;
@@ -97,9 +101,6 @@ ul li {
 
 .heading.scrolled {
   background-color: #333;
-}
-.heading.scrolled-navigaion__link:hover {
-  background-color: #212121;
 }
 
 /* HERO CONF */

@@ -229,8 +229,7 @@ ul {
 
     &-wrapper {
         &__header {
-            margin-top: 2rem;
-            margin-bottom: 0;
+            margin: 2rem 0;
             font-size: 1.5rem;
         }
     }
@@ -242,11 +241,7 @@ ul {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 0;
-    }
-
-    &-link {
-        margin: auto 0;
+        margin: 0;
     }
 
     &-content {
@@ -257,6 +252,9 @@ ul {
         &__item {
             max-width: 250px;
             margin: 0 30px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px 10px 20px 10px;
         }
 
         p {
@@ -264,16 +262,9 @@ ul {
         }
 
         img {
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 5px;
             width: 100%;
             transition: 0.3s;
             z-index: 2;
-        }
-
-        img:hover {
-            transform: scale(1.08);
         }
 
         img:focus {
@@ -315,11 +306,6 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    &-link__decrp {
-        display: inline-block;
-        min-width: 90px;
-    }
 
     &-contacts {
         display: flex;

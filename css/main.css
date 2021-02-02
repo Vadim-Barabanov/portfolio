@@ -191,8 +191,7 @@ ul li {
   padding-bottom: 90px;
 }
 .projects-wrapper__header {
-  margin-top: 2rem;
-  margin-bottom: 0;
+  margin: 2rem 0;
   font-size: 1.5rem;
 }
 .projects-header {
@@ -202,10 +201,7 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0;
-}
-.projects-link {
-  margin: auto 0;
+  margin: 0;
 }
 .projects-content {
   display: flex;
@@ -215,20 +211,17 @@ ul li {
 .projects-content__item {
   max-width: 250px;
   margin: 0 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px 10px 20px 10px;
 }
 .projects-content p {
   font-size: 18px;
 }
 .projects-content img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
   width: 100%;
   transition: 0.3s;
   z-index: 2;
-}
-.projects-content img:hover {
-  transform: scale(1.08);
 }
 .projects-content img:focus {
   outline: none;
@@ -265,10 +258,6 @@ ul li {
   justify-content: center;
   align-items: center;
 }
-.footer-link__decrp {
-  display: inline-block;
-  min-width: 90px;
-}
 .footer-contacts {
   display: flex;
   justify-content: space-around;
@@ -295,7 +284,9 @@ ul li {
     display: block;
     position: relative;
   }
-  .toggle-btn span, .toggle-btn span::before, .toggle-btn span::after {
+  .toggle-btn span,
+.toggle-btn span::before,
+.toggle-btn span::after {
     width: 30px;
     height: 3px;
     border-radius: 2px;
@@ -304,7 +295,8 @@ ul li {
     transform-origin: center;
     transition: 0.2s ease-in-out;
   }
-  .toggle-btn span::before, .toggle-btn span::after {
+  .toggle-btn span::before,
+.toggle-btn span::after {
     content: "";
     position: absolute;
   }
@@ -380,6 +372,9 @@ ul li {
     flex-direction: column;
   }
 
+  .projects-link {
+    width: 80%;
+  }
   .projects-content img {
     width: 80%;
   }
@@ -439,7 +434,8 @@ ul li {
   .about-content__text {
     align-items: flex-start;
   }
-  .about-content__text h4, .about-content__text h2 {
+  .about-content__text h4,
+.about-content__text h2 {
     align-self: center;
   }
 
@@ -449,8 +445,9 @@ ul li {
   .projects h2 {
     padding-top: 60px;
   }
-  .projects-content h3 {
-    margin: 15px 0;
+  .projects-content__item {
+    margin: 1rem 0;
+    padding: 5px 5px 15px 5px;
   }
 
   .diff h2 {

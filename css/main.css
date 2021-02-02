@@ -193,6 +193,16 @@ ul li {
 .projects-wrapper__header {
   margin-top: 2rem;
   margin-bottom: 0;
+  font-size: 1.5rem;
+}
+.projects-header {
+  font-size: 1.2rem;
+  font-weight: 300;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
 }
 .projects-link {
   margin: auto 0;
@@ -205,14 +215,6 @@ ul li {
 .projects-content__item {
   max-width: 250px;
   margin: 0 30px;
-}
-.projects-content h3 {
-  font-size: 20px;
-  font-weight: 300;
-  min-height: 54px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .projects-content p {
   font-size: 18px;

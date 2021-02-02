@@ -231,7 +231,18 @@ ul {
         &__header {
             margin-top: 2rem;
             margin-bottom: 0;
+            font-size: 1.5rem;
         }
+    }
+
+    &-header {
+        font-size: 1.2rem;
+        font-weight: 300;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
     }
 
     &-link {
@@ -246,15 +257,6 @@ ul {
         &__item {
             max-width: 250px;
             margin: 0 30px;
-        }
-
-        h3 {
-            font-size: 20px;
-            font-weight: 300;
-            min-height: 54px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
         p {

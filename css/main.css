@@ -152,9 +152,6 @@ ul li {
 }
 
 /* ABOUT CONF */
-.about ul {
-  width: 250px;
-}
 .about-wrapper {
   display: flex;
   flex-direction: column;
@@ -175,8 +172,9 @@ ul li {
 .about-content__text {
   padding: 0 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 .about-content__text h3 {
   text-align: center;
@@ -196,7 +194,7 @@ ul li {
   font-size: 1.5rem;
 }
 .projects-header {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 300;
   min-height: 44px;
   display: flex;
@@ -212,9 +210,8 @@ ul li {
 .projects-content__item {
   max-width: 250px;
   margin: 0 30px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px 10px 20px 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
 }
 .projects-content p {
   font-size: 18px;
@@ -433,6 +430,7 @@ ul li {
     width: 325px;
   }
   .about-content__text {
+    justify-content: flex-start;
     align-items: flex-start;
   }
   .about-content__text h4,

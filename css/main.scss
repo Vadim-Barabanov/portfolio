@@ -179,10 +179,6 @@ ul {
 
 /* ABOUT CONF */
 .about {
-    ul {
-        width: 250px;
-    }
-
     &-wrapper {
         display: flex;
         flex-direction: column;
@@ -205,8 +201,9 @@ ul {
         &__text {
             padding: 0 30px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
 
             h3 {
                 text-align: center;
@@ -233,7 +230,7 @@ ul {
     }
 
     &-header {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: 300;
         min-height: 44px;
         display: flex;
@@ -250,9 +247,8 @@ ul {
         &__item {
             max-width: 250px;
             margin: 0 30px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 10px 10px 20px 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
         }
 
         p {

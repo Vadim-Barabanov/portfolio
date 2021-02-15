@@ -202,6 +202,7 @@
                 width: 325px;
             }
             &__text {
+                justify-content: flex-start;
                 h4,
                 h2 {
                     align-self: center;

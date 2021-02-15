@@ -429,6 +429,9 @@ ul li {
   .about-content__img {
     width: 325px;
   }
+  .about-content__item {
+    width: 250px;
+  }
   .about-content__text {
     justify-content: flex-start;
     align-items: flex-start;
